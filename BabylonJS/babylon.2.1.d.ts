@@ -300,8 +300,8 @@ interface Window {
     MSGesture: MSGesture;
     CANNON: any;
     SIMD: any;
-    AudioContext: AudioContext;
-    webkitAudioContext: AudioContext;
+    //AudioContext: AudioContext;
+    //webkitAudioContext: AudioContext;
 }
 interface HTMLURL {
     createObjectURL(param1: any, param2?: any): any;
@@ -1315,7 +1315,7 @@ declare module BABYLON {
         getFloatFrequencyData(): Uint8Array;
         drawDebugCanvas(): void;
         stopDebugCanvas(): void;
-        connectAudioNodes(inputAudioNode: AudioNode, outputAudioNode: AudioNode): void;
+        //connectAudioNodes(inputAudioNode: AudioNode, outputAudioNode: AudioNode): void;
         dispose(): void;
     }
 }
@@ -1324,10 +1324,10 @@ declare module BABYLON {
         private _audioContext;
         private _audioContextInitialized;
         canUseWebAudio: boolean;
-        masterGain: GainNode;
+        //masterGain: GainNode;
         private _connectedAnalyser;
         WarnedWebAudioUnsupported: boolean;
-        audioContext: AudioContext;
+        //audioContext: AudioContext;
         constructor();
         private _initializeAudioContext();
         dispose(): void;
@@ -1385,14 +1385,14 @@ declare module BABYLON {
         constructor(name: string, urlOrArrayBuffer: any, scene: Scene, readyToPlayCallback?: () => void, options?: any);
         dispose(): void;
         private _soundLoaded(audioData);
-        setAudioBuffer(audioBuffer: AudioBuffer): void;
+        //setAudioBuffer(audioBuffer: AudioBuffer): void;
         updateOptions(options: any): void;
         private _createSpatialParameters();
         private _updateSpatialParameters();
         switchPanningModelToHRTF(): void;
         switchPanningModelToEqualPower(): void;
         private _switchPanningModel();
-        connectToSoundTrackAudioNode(soundTrackAudioNode: AudioNode): void;
+        //connectToSoundTrackAudioNode(soundTrackAudioNode: AudioNode): void;
         /**
         * Transform this sound into a directional source
         * @param coneInnerAngle Size of the inner cone in degree
