@@ -8,6 +8,5 @@ Add to the commandline argument:
 ```
 
 ##Links:
-TypeScript: http://typescriptlang.org/
-
-BabylonJS: http://babylonjs.com/
+- TypeScript: http://typescriptlang.org/
+- BabylonJS: http://babylonjs.com/
