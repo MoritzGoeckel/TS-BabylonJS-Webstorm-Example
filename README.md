@@ -6,3 +6,7 @@ Add to the commandline argument:
 ```
 --output generated.js
 ```
+
+##Links:
+TypeScript: http://typescriptlang.org/
+BabylonJS: http://babylonjs.com/
